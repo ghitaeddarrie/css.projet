@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>korean snacks.....</title>
     <link rel="stylesheet" href="projet.css">
@@ -18,7 +19,7 @@
                 <img src="image/logo8.jpg" width="80px">
             </div>
             <nav>
-                <ul> 
+                <ul id="MenuItems"> 
                     <li><a href="">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">About</a></li>
@@ -26,7 +27,8 @@
                     <li><a href="">Account</a></li>
                 </ul>
             </nav>
-            <img src="image/cart.jpg" width="30px" height="30px">
+            <img src="image/cart.png" width="30px" height="30px">
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()" >
         </div>
         <div class="row">
             <div class="col-2">
@@ -61,6 +63,57 @@
                <h2 class="title">featured Products</h2>
                <div class="row">
                 <div class="col-4">
+                    <img src="image/2.jpg" >
+                    <h4>Korean Cheese Fire Noodles</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>30 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/9.jpg" >
+                    <h4>Samyang Ramen Hot Chicken</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>30 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/13.jpg" >
+                    <h4>Noodles-Hot Chicken-Spicy</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>35 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/12.jpg" >
+                    <h4>Samyang Jjajang Flavor Ramen</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>30 DH</p>
+                </div>
+               </div>
+               <h2 class="title">Latest Products</h2>
+               <div class="row">
+                <div class="col-4">
                     <img src="image/6.jpg" >
                     <h4>Buldak chicken stir Fried Ramen-Carbonara 1ea</h4>
                     <div class="rating">
@@ -86,7 +139,7 @@
                 </div>
                 <div class="col-4">
                     <img src="image/7.jpg" >
-                    <h4>Spicy cheese Ramen Recipe </h4>
+                    <h4>Monster Juice</h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -94,7 +147,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <p>17 DH</p>
+                    <p>27 DH</p>
                 </div>
                 <div class="col-4">
                     <img src="image/8.jpg" >
@@ -109,6 +162,243 @@
                     <p>30 DH</p>
                 </div>
                </div>
+               <div class="row">
+                <div class="col-4">
+                    <img src="image/16.jpg" >
+                    <h4>Strawberry Pocky</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>26 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/15.jpg" >
+                    <h4>Chocolate Pocky </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>26 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/10.jpg" >
+                    <h4>Monster Energy Drink </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>23 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/5.jpg" >
+                    <h4>Samyang 4X Pink Spicy Mala Korean Ramen Fire Noodle</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>120 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/19.jpg" >
+                    <h4>Eyeball bubble gum</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>10 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/21.jpg" >
+                    <h4>Strawberry Ramune Soda</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>20 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/22.jpg" >
+                    <h4>Calypso Pink Guava</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>40 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/23.jpg" >
+                    <h4>Calypso ocean Blue</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>40 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/24.jpg" >
+                    <h4>Calypso Original Lemonade</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>40 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/25.jpg" >
+                    <h4>Calypso Lemonade island wave</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>40 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/26.jpg" >
+                    <h4>Trolli mini burger jelly</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>6 DH</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/27.jpg" >
+                    <h4>Fragola Choccolato </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>200 DH</p>
+                </div>
+               </div>
         <div>
+ <!--------------------offer---------------------> 
+            <div class="offer">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="image/18.jpg" class="offer-img" >
+                        </div>
+                        <div class="col-2">
+                            <p>Exclusively available on 'KOLBES'</p>
+                            <h1>FLAVORS-CALYPSO</h1>
+                            <small>Browse The unique flavors of calypso lemonades,limeades and Zero Sugar combinations made with real fruit and natural flavors</small>
+                            <a href="" class="btn">Buy Now &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------brands----------------->
+           <div class="brands">
+              <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="image/logo7.jpg">
+                    </div>
+                    <div class="col-5">
+                        <img src="image/logo5.jpg">
+                    </div>
+                    <div class="col-5">
+                        <img src="image/logo4.jpg">
+                    </div>
+                    <div class="col-5">
+                        <img src="image/logo2.jpg">
+                    </div>
+                </div>
+              </div>
+           </div>
+<!-----------------footer--------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/play-store-logo-nisi-filters-australia-11.png" >
+                        <img src="image/download.png" >
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo3.jpg" >
+                    <p>Our Purpose is to sustainably Make the Pleasure and Benefits pf food Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2023 - Easy tutorials</p>
+        </div>
+    </div>
+<!------------------------js for togglle menu----------------------------->
+               <script>
+                 var MenuItems = document.getElementById("MenuItems")
+
+                 MenuItems.style.maxHeight ="0px";
+
+                 function menutoggle( ){
+                    if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                    else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                 }
+               </script>
 </body>
 </html>
